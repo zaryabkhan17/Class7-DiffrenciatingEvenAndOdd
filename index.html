@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaryab</title>
+</head>
+
+<body>
+    <form action="#" >
+        <input type="number" required id="get">
+        <button onclick= "add()">Add</button>
+    </form>
+    <p id="abc"></p>
+    
+
+    <button onclick="my()">Arrange</button>
+   <h2>Even Numbers</h2>
+   <h3 id="even"></h3>
+   <h2>Odd Numbers</h2>
+    
+<h3 id="odd"></h3>
+
+    <script>
+// let user = document.getElementById("get").value;
+
+       var arr= []
+        var Even = []
+        var Odd = [] 
+
+           function add() { 
+            let user = document.getElementById("get").value;
+            arr.push(user);
+            document.getElementById("abc").innerText= arr;
+            document.getElementById("get").value= "";
+            }
+            
+
+            function my() {
+
+
+                for ( i=0 ; i<arr.length ;i++ ){
+                    if (arr[i]  % 2===0) { 
+                        Even.push(arr[i]);
+                        document.getElementById("even").innerHTML=Even;
+
+                    }
+                    else {
+                        Odd.push(arr[i]);
+                        document.getElementById("odd").innerHTML=Odd;
+                    }
+
+
+            }
+            }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+<!-- </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#"> 
+        <input type="number" id="roll">
+        <button onclick="add()">add</button>
+    </form>
+    <h1 id="list"></h1>
+
+    <button onclick="check()">check</button>
+
+    <h1>EVEN ROLL NUMBERS</h1>
+    <p id="even"></p>
+    <h1>ODD ROLL NUMBERS</h1>
+    <p id="odd"></p>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+        var arr1=[]
+        var even=[]
+        var odd=[]
+   
+        function add(){
+            var add1= document.getElementById("roll").value;
+            arr1.push(add1);
+            document.getElementById("list").innerText= arr1;
+            document.getElementById("roll").value="";
+        }
+function check(){
+    for(i=0; i <arr1.length;i++){
+        if(arr1[i] % 2 === 0){
+            even.push(arr1[i]);
+            document.getElementById("even").innerHTML=even
+        }
+        else{
+            odd.push(arr1[i]);
+            document.getElementById("odd").innerHTML=odd
+        }
+    }
+}
+    </script>
+</body>
+</html> -->
